@@ -121,7 +121,6 @@ router.post('/signup', function(req,res,next){
         }
 
     }).catch(function(e) {
-        logging.errorLog(username, e);
         res.status(500);
     });
 
